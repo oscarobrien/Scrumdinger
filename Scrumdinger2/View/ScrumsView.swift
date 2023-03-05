@@ -35,7 +35,7 @@ struct ScrumsView: View {
         .sheet(isPresented: $isPresentingNewScrumView) {
             NavigationView {
                 DetailEditView(data: $newScrumData)
-                    .toolBar {
+                    .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Dismiss") {
                                 isPresentingNewScrumView = false
